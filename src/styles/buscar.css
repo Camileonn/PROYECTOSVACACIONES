@@ -1,0 +1,86 @@
+.buscar-container {
+    background-color: black;
+  }
+  
+  .buscar-hero {
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/15/08/32/australia-4338882_1280.jpg');
+    height: 45rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buscar-filtro {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .buscar-filtro p {
+    color: white;
+    font-size: 2.2rem;
+  }
+  
+  .buscar-filtro input {
+    margin-top: 2.2rem;
+    width: 80%;
+    border-radius: 0.4rem;
+    padding: 1rem 0.8rem;
+    border: none;
+    font-size: 1.6rem;
+  }
+  
+  .buscar-filtro input::placeholder {
+    color: #959594;
+  }
+  
+  .buscar-listado {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 120rem;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 1.5rem;
+    min-height: calc(100vh - 45rem);
+  }
+  
+  @media (min-width: 768px) {
+    .buscar-listado {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .buscar-hero {
+      align-items: start;
+    }
+  
+    .buscar-filtro {
+      width: 40%;
+      align-items: start;
+      text-align: left;
+    }
+  
+    .buscar-filtro p {
+      font-size: 1.4rem;
+    }
+  
+    .buscar-filtro input {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .buscar-listado {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .buscar-sinResultados {
+    color: white;
+    text-align: center;
+    grid-column: 1/4;
+  }
+  
