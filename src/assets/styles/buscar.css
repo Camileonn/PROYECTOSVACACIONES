@@ -1,0 +1,59 @@
+
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    background-color: #1e1f26;
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .filter-form input,
+  .filter-form select {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    min-width: 200px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+  }
+  
+  .filter-form input:focus,
+  .filter-form select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00c6ff;
+  }
+  
+  .filter-form button {
+    padding: 0.7rem 2rem;
+    background-color: #00c6ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .filter-form button:hover {
+    background-color: #009ecf;
+  }
+
+  .characterlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Esto divide el contenedor en dos columnas */
+    gap: 1rem; /* Espacio entre los elementos */
+    padding: 1rem;
+  }
+
+
+  

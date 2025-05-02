@@ -1,0 +1,56 @@
+.episode-detail {
+    padding: 2rem;
+    background-color: #111;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .episode-info {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .episode-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .episode-info p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 0.5rem 0;
+  }
+  
+  .character-list {
+    margin-top: 2rem; /* Añadir margen superior para separar de la sección anterior */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+  }
+  
+   h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .characters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    gap: 2rem;
+    max-width: 1200px; /* Limita el ancho máximo */
+    width: 100%;
+    justify-items: center; /* Centra las cards dentro de las columnas */
+  }
+  
+  @media (max-width: 768px) {
+    .characters-grid {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    }
+  }
+  

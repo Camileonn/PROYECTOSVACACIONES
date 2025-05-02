@@ -1,0 +1,81 @@
+:root {
+    --medium-gray: #2e2e2e;
+    --light-gray: #b0b0b0;
+  }
+  
+  .episode-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .episode-card {
+    display: flex;
+    background-color: var(--medium-gray);
+    color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 15rem;
+    text-align: left;
+  }
+  .episode-image {
+    width: 10rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+  }
+  
+  .episode-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+  
+  .episode-info h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .episode-info p {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+  
+  strong {
+    color: var(--light-gray);
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+  }
+  
+  button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .buttons button:first-child:hover {
+    background-color: #22ae4b;
+    color: white;
+  }
+  
+  .buttons button:last-child:hover {
+    background-color: #ee1b24;
+    color: white;
+  }
+  

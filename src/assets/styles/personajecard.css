@@ -1,0 +1,66 @@
+.characterCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 2rem; /* Aumentado */
+    margin-bottom: 2rem; /* Aumentado */
+    border-radius: 1.5rem; /* Aumentado para estilo más suave */
+    color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    min-height: 250px; /* Aumenta la altura mínima de la card */
+  }
+  
+  .characterCardInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .characterCardInfo h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem; /* Aumentado */
+  }
+  
+  .characterCardInfo p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .characterCardButtons {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .characterCardButtons button {
+    padding: 0.75rem 1.25rem; /* Más grande */
+    border: none;
+    border-radius: 1rem;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .characterCardButtons button:hover {
+    background-color: #388e3c;
+  }
+  
+  .voteCount {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .characterCardImage img {
+    width: 160px; /* Aumentado */
+    height: 160px; /* Aumentado */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  
